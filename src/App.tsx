@@ -109,8 +109,8 @@ const App: React.FC = () => {
       </AppBar>
       <Container className={classes.cardlist}>
         <Grid container spacing={3}>
-        { 
-          jokes.map( (ele: Joke) => (
+        {
+          jokes && jokes.map( (ele: Joke) => (
             <Grid key={ele.id} item xs={12} sm={3}>
               <JokeCard
                 key = { ele.id }
